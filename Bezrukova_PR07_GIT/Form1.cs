@@ -16,5 +16,24 @@ namespace Bezrukova_PR07_GIT
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+           
+            string username = textBox1.Text;
+            string password = textBox2.Text;
+
+            if (username == "admin" && password == "password")
+            {
+                // Если авторизация успешна, открываем форму администратора
+                Adminform adminForm = new Adminform();
+                adminForm.Show();
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("Неверные учетные данные. Попробуйте еще раз.");
+            }
+        }
     }
 }
