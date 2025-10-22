@@ -19,7 +19,10 @@ namespace Bezrukova_PR07_GIT
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
+
+            label2.Text = "Безрукова Ангелина Олеговна";
+            label4.Text = Convert.ToString(DateTime.Now);
+
         }
     }
 }
